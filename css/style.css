@@ -1,0 +1,146 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-container {
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid #ddd; 
+}
+
+.menu-principal ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+    gap: 40px
+}
+
+
+.menu-principal a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    padding-bottom: 8px;
+}
+
+.menu-principal a.activo {
+    border-bottom: 2px solid #333;
+}
+
+.submenu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin:0;
+    padding: 10px 0;
+    gap: 30px;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+
+.submenu a.activo{
+    background-color: #444;
+    color: #fff;
+}
