@@ -21,26 +21,42 @@
     </header>
 
     <div class="menu-container">
-        <nav class="menu-principal">
-            <ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Editorial</a></li>
-                <li><a href="#">Vídeos</a></li>
-                <li><a href="#">Música</a></li>
-                <li><a href="#">Colecciones</a></li>
-            </ul>
-        </nav>
+    <nav class="navegacion">
 
-        <nav class="submenu">
-            <ul>
-                <li><a href="#">Todo</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Deportes</a></li>
-                <li><a href="#">Espectáculos</a></li>
-                <li><a href="#">Archivo</a></li>
+        <!-- Inputs radio ocultos -->
+        <input type="radio" name="menu" id="nosotros" class="radio-menu">
+        <input type="radio" name="menu" id="partidos" class="radio-menu" checked>
+        <input type="radio" name="menu" id="colecciones" class="radio-menu">
+        <input type="radio" name="menu" id="jugadores" class="radio-menu">
+
+        <!-- Fila superior: menú a la izquierda, buscador a la derecha -->
+        <div class="fila-superior">
+            <ul class="menu-principal">
+                <li><label for="nosotros">Nosotros</label></li>
+                <li><label for="partidos">Partidos</label></li>
+                <li><label for="colecciones">Colecciones</label></li>
+                <li><label for="jugadores">Jugadores</label></li>
             </ul>
-        </nav>
-    </div>
+
+            <!-- Buscador -->
+            <form class="buscador" onsubmit="return false;">
+                <input type="text" placeholder="Busca las mejores fotos..." class="input-busqueda">
+                <button type="submit" class="btn-buscar">🔍</button>
+            </form>
+        </div>
+
+        <!-- Submenús -->
+        <ul class="submenu" id="submenu-nosotros">
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <ul class="submenu" id="submenu-colecciones">
+            <li><a href="#">Destacadas</a></li>
+            <li><a href="#">Recientes</a></li>
+        </ul>
+    </nav>
+</div>
 
     <section class="banner" id="banner">
         <button class="banner-arrow banner-arrow-left" id="prevBtn" aria-label="Anterior">&#8249;</button>
