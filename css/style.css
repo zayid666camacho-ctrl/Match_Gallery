@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* ===== HEADER ===== */
 .header {
     background: linear-gradient(90deg, #002B7F, #D71920);
@@ -309,4 +320,20 @@
 #jugadores:checked ~ .fila-superior .menu-principal label[for="jugadores"] {
   color: #ffcc00;
   border-bottom: 2px solid #ffcc00;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    background-color: #002b7f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-top: 4px solid #d71920;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
