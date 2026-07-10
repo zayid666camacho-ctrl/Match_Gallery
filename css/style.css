@@ -1,4 +1,45 @@
 
+.header {
+    background: linear-gradient(90deg, #002B7F, #D71920);
+    padding: 12px 40px;
+    border-bottom: 4px solid #F4C542;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+.header-content {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.header-title h1 {
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-title p {
+    margin: 2px 0 0;
+    color: #F4C542;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .menu-container {
     font-family: Arial, sans-serif;
     border-bottom: 1px solid #ddd; 
