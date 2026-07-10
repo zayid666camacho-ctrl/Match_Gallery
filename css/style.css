@@ -204,7 +204,7 @@
 }
 
 .navegacion {
-  background: linear-gradient(90deg, #0b6623, #0e8a2e);
+  background: linear-gradient(90deg, #1a1a4d, #2d1b4e);
   border-bottom: 4px solid #ffcc00;
 }
 
@@ -291,7 +291,7 @@
 }
 
 .submenu a:hover {
-  color: #0b6623;
+  color: #1a1a4d;
 }
 
 /* Mostrar el submenú correspondiente según el radio marcado */
