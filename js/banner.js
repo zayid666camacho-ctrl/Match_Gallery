@@ -1,8 +1,8 @@
 // Lista de imágenes del banner
 const bannerImages = [
-"img/banner/world_cup.jpg",
-"img/banner/OIF.webp",
-"img/banner/th.webp"
+"img/banner/argentinaworldcup.jpg",
+"img/banner/copa.jpg",
+"img/banner/colombia.jpg"
 ];
 
 let currentSlide = 0;
@@ -25,11 +25,17 @@ bannerImages.forEach((_, index) => {
 
 // Actualizar imagen de fondo y el dot activo
 function actualizarBanner() {
-banner.style.backgroundImage = `url('${bannerImages[currentSlide]}')`;
+    banner.style.backgroundImage = `url('${bannerImages[currentSlide]}')`;
 
-document.querySelectorAll(".dot").forEach((dot, index) => {
-    dot.classList.toggle("active", index === currentSlide);
-});
+    // Quita las clases anteriores
+    banner.classList.remove("banner-1", "banner-2", "banner-3");
+
+    // Agrega la clase de la imagen actual
+    banner.classList.add(`banner-${currentSlide + 1}`);
+
+    document.querySelectorAll(".dot").forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentSlide);
+    });
 }
 
 function irASlide(index) {
