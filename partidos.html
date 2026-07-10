@@ -6,17 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="img/logo/logo.jpg" alt="Match Gallery">
+            </a>
 
-
-
+            <div class="header-title">
+                <h1>FIFA World Cup 2026</h1>
+                <p>Match Gallery</p>
+            </div>
+        </div>
     </header>
 
-    <nav>
+    <div class="menu-container">
+    <nav class="navegacion">
+
+        <!-- Inputs radio ocultos -->
+        <input type="radio" name="menu" id="nosotros" class="radio-menu">
+        <input type="radio" name="menu" id="partidos" class="radio-menu">
 
 
+        <!-- Fila superior: menú a la izquierda, buscador a la derecha -->
+        <div class="fila-superior">
+            <ul class="menu-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><label for="nosotros">Nosotros</label></li>
+                <li><label for="partidos">Partidos</label></li>
+            </ul>
+
+            <!-- Buscador -->
+            <form class="buscador" onsubmit="return false;">
+                <input type="text" placeholder="Busca las mejores fotos..." class="input-busqueda">
+                <button type="submit" class="btn-buscar">🔍</button>
+            </form>
+        </div>
+
+        <!-- Submenús -->
+        <ul class="submenu" id="submenu-nosotros">
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
 
     </nav>
+</div>
+
+
 
     <section>
 
