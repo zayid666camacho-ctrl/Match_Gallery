@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Partidos</title>
+    <link rel="stylesheet" href = "css/stylreHEDAV.css">
 </head>
 <body>
     <header class="header">
@@ -19,20 +20,21 @@
         </div>
     </header>
 
+    
+
     <div class="menu-container">
     <nav class="navegacion">
 
         <!-- Inputs radio ocultos -->
         <input type="radio" name="menu" id="nosotros" class="radio-menu">
-        <input type="radio" name="menu" id="partidos" class="radio-menu">
+        <input type="radio" name="menu" id="worldcup" class="radio-menu" checked>
 
 
         <!-- Fila superior: menú a la izquierda, buscador a la derecha -->
         <div class="fila-superior">
-            <ul class="menu-principal">
-                <li><a href="index.html">Inicio</a></li>
+                <ul class="menu-principal">
                 <li><label for="nosotros">Nosotros</label></li>
-                <li><label for="partidos">Partidos</label></li>
+                <li><label for="worldcup">World Cup 2026</label></li>
             </ul>
 
             <!-- Buscador -->
@@ -44,25 +46,16 @@
 
         <!-- Submenús -->
         <ul class="submenu" id="submenu-nosotros">
-            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="quienessomos.html">Quiénes somos</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
 
-    </nav>
-</div>
+        <ul class="submenu" id="submenu-worldcup">
+            <li><a href="partidos.html">Partidos</a></li>
+            <li><a href="jugadores.html">Jugadores</a></li>
+        </ul>
+        </nav>
+    </div>
 
-
-
-    <section>
-
-
-
-    </section>
-
-    <footer>
-
-        
-
-    </footer>
 </body>
 </html>
