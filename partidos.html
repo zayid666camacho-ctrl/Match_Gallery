@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Partidos</title>
+    <link rel="stylesheet" href = "css/style_partidos.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header-content">
@@ -20,49 +22,121 @@
     </header>
 
     <div class="menu-container">
-    <nav class="navegacion">
+        <nav class="navegacion">
 
-        <!-- Inputs radio ocultos -->
-        <input type="radio" name="menu" id="nosotros" class="radio-menu">
-        <input type="radio" name="menu" id="partidos" class="radio-menu">
+            <!-- Inputs radio ocultos -->
+            <input type="radio" name="menu" id="nosotros" class="radio-menu">
+            <input type="radio" name="menu" id="partidos" class="radio-menu">
 
 
-        <!-- Fila superior: menú a la izquierda, buscador a la derecha -->
-        <div class="fila-superior">
-            <ul class="menu-principal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><label for="nosotros">Nosotros</label></li>
-                <li><label for="partidos">Partidos</label></li>
+            <!-- Fila superior: menú a la izquierda, buscador a la derecha -->
+            <div class="fila-superior">
+                <ul class="menu-principal">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><label for="nosotros">Nosotros</label></li>
+                    <li><label for="partidos">Partidos</label></li>
+                </ul>
+
+                <!-- Buscador -->
+                <form class="buscador" onsubmit="return false;">
+                    <input type="text" placeholder="Busca las mejores fotos..." class="input-busqueda">
+                    <button type="submit" class="btn-buscar">🔍</button>
+                </form>
+            </div>
+
+            <!-- Submenús -->
+            <ul class="submenu" id="submenu-nosotros">
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
 
-            <!-- Buscador -->
-            <form class="buscador" onsubmit="return false;">
-                <input type="text" placeholder="Busca las mejores fotos..." class="input-busqueda">
-                <button type="submit" class="btn-buscar">🔍</button>
-            </form>
+        </nav>
+    </div>
+
+    <section id="galerias" class="galerias">
+        <h2>Partidos Destacados</h2>
+
+        <div class="galeria-grid">
+
+            <a href="colombia-suiza.html" class="card">
+                <img src="img/colombia vs suiza.jpg" alt="">
+                <div class="card-info">
+                    <h3>Colombia vs Suiza</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="francia-noruega.html" class="card">
+                <img src="img/francia vs noruega.jpg" alt="">
+                <div class="card-info">
+                    <h3>Francia vs Noruega</h3>
+                    <p>Fase de grupos</p>
+                </div>
+            </a>
+
+            <a href="portugal-españa.html" class="card">
+                <img src="img/españa vs portugal.jpg" alt="">
+                <div class="card-info">
+                    <h3>España vs Portugal</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="brazil-japón.html" class="card">
+                <img src="img/brazil vs japón.jpg" alt="">
+                <div class="card-info">
+                    <h3>Brazil vs Japón</h3>
+                    <p>Fase de grupos</p>
+                </div>
+            </a>
+
+            <a href="españa-Bélgica.html" class="card">
+                <img src="img/españa vs bélgica.jpg" alt="">
+                <div class="card-info">
+                    <h3>España vs Bélgica</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="francia-marruecos.html" class="card">
+                <img src="img/francia vs marruecos.jpg" alt="">
+                <div class="card-info">
+                    <h3>Francia vs Marruecos</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="estados unidos-bélgica.html" class="card">
+                <img src="img/estados unidos vs bélgica.jpg" alt="">
+                <div class="card-info">
+                    <h3>Estados Unidos vs Bélgica</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="argentina-suiza.html" class="card">
+                <img src="img/argentina vs suiza.jpg" alt="">
+                <div class="card-info">
+                    <h3>Argentina vs Suiza</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+
+            <a href="Inglaterra-Noruega.html" class="card">
+                <img src="img/inglaterra vs noruega.jpg" alt="">
+                <div class="card-info">
+                    <h3>Inglaterra vs Noruega</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+
         </div>
-
-        <!-- Submenús -->
-        <ul class="submenu" id="submenu-nosotros">
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-
-    </nav>
-</div>
-
-
-
-    <section>
-
-
-
     </section>
 
-    <footer>
-
-        
-
+    <footer class="footer">
+        <p>&copy; 2026 Match Gallery | FIFA World Cup 2026</p>
     </footer>
 </body>
 </html>
