@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partidos</title>
-    <link rel="stylesheet" href = "css/stylreHEDAV.css">
+    <link rel="stylesheet" href="css/style_partidos.css">
 </head>
+
 <body>
+
     <header class="header">
         <div class="header-content">
+
             <a href="index.html" class="logo">
                 <img src="img/logo/logo.jpg" alt="Match Gallery">
             </a>
@@ -17,45 +21,132 @@
                 <h1>FIFA World Cup 2026</h1>
                 <p>Match Gallery</p>
             </div>
+
         </div>
     </header>
 
-    
-
     <div class="menu-container">
-    <nav class="navegacion">
 
-        <!-- Inputs radio ocultos -->
-        <input type="radio" name="menu" id="nosotros" class="radio-menu">
-        <input type="radio" name="menu" id="worldcup" class="radio-menu" checked>
+        <nav class="navegacion">
 
+            <!-- Radios -->
+            <input type="radio" name="menu" id="nosotros" class="radio-menu">
+            <input type="radio" name="menu" id="worldcup" class="radio-menu" checked>
 
-        <!-- Fila superior: menú a la izquierda, buscador a la derecha -->
-        <div class="fila-superior">
+            <!-- Menú -->
+            <div class="fila-superior">
+
                 <ul class="menu-principal">
-                <li><label for="nosotros">Nosotros</label></li>
-                <li><label for="worldcup">World Cup 2026</label></li>
+                    <li><label for="nosotros">Nosotros</label></li>
+                    <li><label for="worldcup">World Cup 2026</label></li>
+                </ul>
+
+                <form class="buscador" onsubmit="return false;">
+                    <input type="text" placeholder="Busca las mejores fotos..." class="input-busqueda">
+                    <button type="submit" class="btn-buscar">🔍</button>
+                </form>
+
+            </div>
+
+            <!-- Submenús -->
+            <ul class="submenu" id="submenu-nosotros">
+                <li><a href="quienessomos.html">Quiénes somos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
 
-            <!-- Buscador -->
-            <form class="buscador" onsubmit="return false;">
-                <input type="text" placeholder="Busca las mejores fotos..." class="input-busqueda">
-                <button type="submit" class="btn-buscar">🔍</button>
-            </form>
-        </div>
+            <ul class="submenu" id="submenu-worldcup">
+                <li><a href="partidos.html">Partidos</a></li>
+                <li><a href="jugadores.html">Jugadores</a></li>
+            </ul>
 
-        <!-- Submenús -->
-        <ul class="submenu" id="submenu-nosotros">
-            <li><a href="quienessomos.html">Quiénes somos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-
-        <ul class="submenu" id="submenu-worldcup">
-            <li><a href="partidos.html">Partidos</a></li>
-            <li><a href="jugadores.html">Jugadores</a></li>
-        </ul>
         </nav>
+
     </div>
 
+    <section class="galerias">
+
+        <div class="galeria-grid">
+
+            <a href="colombia-suiza.html" class="card">
+                <img src="img/colombia vs suiza.jpg" alt="">
+                <div class="card-info">
+                    <h3>Colombia vs Suiza</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="francia-noruega.html" class="card">
+                <img src="img/francia vs noruega.jpg" alt="">
+                <div class="card-info">
+                    <h3>Francia vs Noruega</h3>
+                    <p>Fase de grupos</p>
+                </div>
+            </a>
+
+            <a href="portugal-españa.html" class="card">
+                <img src="img/españa vs portugal.jpg" alt="">
+                <div class="card-info">
+                    <h3>España vs Portugal</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="brazil-japón.html" class="card">
+                <img src="img/brazil vs japón.jpg" alt="">
+                <div class="card-info">
+                    <h3>Brasil vs Japón</h3>
+                    <p>Fase de grupos</p>
+                </div>
+            </a>
+
+            <a href="españa-Bélgica.html" class="card">
+                <img src="img/españa vs bélgica.jpg" alt="">
+                <div class="card-info">
+                    <h3>España vs Bélgica</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="francia-marruecos.html" class="card">
+                <img src="img/francia vs marruecos.jpg" alt="">
+                <div class="card-info">
+                    <h3>Francia vs Marruecos</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="estados unidos-bélgica.html" class="card">
+                <img src="img/estados unidos vs bélgica.jpg" alt="">
+                <div class="card-info">
+                    <h3>Estados Unidos vs Bélgica</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="argentina-suiza.html" class="card">
+                <img src="img/argentina vs suiza.jpg" alt="">
+                <div class="card-info">
+                    <h3>Argentina vs Suiza</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+            <a href="Inglaterra-Noruega.html" class="card">
+                <img src="img/inglaterra vs noruega.jpg" alt="">
+                <div class="card-info">
+                    <h3>Inglaterra vs Noruega</h3>
+                    <p>Octavos de final</p>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Match Gallery | FIFA World Cup 2026</p>
+    </footer>
+
 </body>
+
 </html>
