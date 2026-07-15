@@ -217,9 +217,7 @@ body {
 
 /* Mostrar el submenú correspondiente según el radio marcado */
 #nosotros:checked ~ #submenu-nosotros,
-#partidos:checked ~ #submenu-partidos,
-#colecciones:checked ~ #submenu-colecciones,
-#jugadores:checked ~ #submenu-jugadores {
+#jugadores:checked ~ #submenu-worldcup {
   display: flex;
 }
 
@@ -415,14 +413,17 @@ body{
 }
 
 .galeria-grid{
-    display: flex;
-    justify-content: center;
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    flex-wrap: wrap;
 }
 
 .card{
-    width: 320px;
+    width: 100%;
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -436,7 +437,7 @@ body{
 
 .card img{
     width: 100%;
-    height: 220px;
+    height: 260px;
     object-fit: cover;
 }
 
