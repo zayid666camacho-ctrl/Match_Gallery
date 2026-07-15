@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partidos</title>
-    <link rel="stylesheet" href = "css/style_partidos.css">
+    <link rel="stylesheet" href="css/style_partidos.css">
 </head>
 
 <body>
+
     <header class="header">
         <div class="header-content">
+
             <a href="index.html" class="logo">
                 <img src="img/logo/logo.jpg" alt="Match Gallery">
             </a>
@@ -18,43 +21,50 @@
                 <h1>FIFA World Cup 2026</h1>
                 <p>Match Gallery</p>
             </div>
+
         </div>
     </header>
 
     <div class="menu-container">
+
         <nav class="navegacion">
 
-            <!-- Inputs radio ocultos -->
+            <!-- Radios -->
             <input type="radio" name="menu" id="nosotros" class="radio-menu">
-            <input type="radio" name="menu" id="partidos" class="radio-menu">
+            <input type="radio" name="menu" id="worldcup" class="radio-menu" checked>
 
-
-            <!-- Fila superior: menú a la izquierda, buscador a la derecha -->
+            <!-- Menú -->
             <div class="fila-superior">
+
                 <ul class="menu-principal">
                     <li><a href="index.html">Inicio</a></li>
                     <li><label for="nosotros">Nosotros</label></li>
-                    <li><label for="partidos">Partidos</label></li>
+                    <li><label for="worldcup">World Cup 2026</label></li>
                 </ul>
 
-                <!-- Buscador -->
                 <form class="buscador" onsubmit="return false;">
                     <input type="text" placeholder="Busca las mejores fotos..." class="input-busqueda">
                     <button type="submit" class="btn-buscar">🔍</button>
                 </form>
+
             </div>
 
             <!-- Submenús -->
             <ul class="submenu" id="submenu-nosotros">
-                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="quienessomos.html">Quiénes somos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
 
+            <ul class="submenu" id="submenu-worldcup">
+                <li><a href="partidos.html">Partidos</a></li>
+                <li><a href="jugadores.html">Jugadores</a></li>
+            </ul>
+
         </nav>
+
     </div>
 
-    <section id="galerias" class="galerias">
-        <h2>Partidos Destacados</h2>
+    <section class="galeria">
 
         <div class="galeria-grid">
 
@@ -85,7 +95,7 @@
             <a href="brazil-japón.html" class="card">
                 <img src="img/brazil vs japón.jpg" alt="">
                 <div class="card-info">
-                    <h3>Brazil vs Japón</h3>
+                    <h3>Brasil vs Japón</h3>
                     <p>Fase de grupos</p>
                 </div>
             </a>
@@ -122,7 +132,6 @@
                 </div>
             </a>
 
-
             <a href="Inglaterra-Noruega.html" class="card">
                 <img src="img/inglaterra vs noruega.jpg" alt="">
                 <div class="card-info">
@@ -131,12 +140,14 @@
                 </div>
             </a>
 
-
         </div>
+
     </section>
 
     <footer class="footer">
         <p>&copy; 2026 Match Gallery | FIFA World Cup 2026</p>
     </footer>
+
 </body>
+
 </html>
