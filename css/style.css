@@ -216,15 +216,16 @@ body {
 
 .navegacion {
   background: linear-gradient(90deg, #1a1a4d, #2d1b4e);
-  border-bottom: 4px solid #ffcc00;
+  border-bottom: 4px solid #2b2613;
 }
 
 /* Fila superior: menú a la izquierda, buscador a la derecha */
 .fila-superior {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 30px;
+background-color: rgb(235, 229, 170);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 14px 30px;
 }
 
 /* Menú principal */
@@ -236,27 +237,17 @@ body {
   padding: 0;
 }
 
-.menu-principal label {
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: 600;
-  padding-bottom: 6px;
-  transition: color 0.2s ease;
-}
 
-.menu-principal label:hover {
-  color: #3acef063;
-}
+
 
 /* Buscador destacado, alineado a la derecha */
 .buscador {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  border: 3px solid #ffcc00;
-  border-radius: 30px;
-  padding: 6px 6px 6px 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 20px;
+  padding: 5px 5px 5px 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -283,34 +274,6 @@ body {
   background-color: #e6b800;
 }
 
-/* Submenús */
-.submenu {
-  display: none;
-  list-style: none;
-  gap: 30px;
-  margin: 0;
-  padding: 10px 30px;
-  background-color: #f2f2f2;
-  border-top: 1px solid #ddd;
-}
-
-.submenu a {
-text-decoration: none;
-color: #333;
-font-size: 14px;
-font-weight: 500;
-}
-
-.submenu a:hover {
-color: #1a1a4d;
-}
-
-
-/* Mostrar el submenú correspondiente según el radio marcado */
-#nosotros:checked ~ #submenu-nosotros,
-#worldcup:checked ~ #submenu-worldcup {
-display: block;
-}
 
 
 
@@ -329,6 +292,7 @@ display: block;
     font-size: 0.9rem;
     letter-spacing: 1px;
 }
+
 
 /* ===== GALERIAS ===== */
 
@@ -380,4 +344,52 @@ display: block;
 
 .card-info p{
     color: #555;
+}
+
+
+
+.nosotros {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 60px;
+}
+
+.nosotros-texto {
+  flex: 1;
+}
+
+.nosotros-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+.nosotros-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.nosotros-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-imagen img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive: apila texto e imagen en pantallas pequeñas */
+@media (max-width: 768px) {
+  .nosotros {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
 }
